@@ -1,0 +1,182 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Da Place Hotel</title>
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #ffffff; /* brighter background */
+  color: #333;
+}
+
+    
+    header, footer {
+      background: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background: #eee;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 900px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    figure {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form label {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    form input, form select, form textarea, form button {
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background: #004080;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+      padding: 10px;
+    }
+    form button:hover {
+      background: #00264d;
+    }
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    gallery img {
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+<body>
+    
+        <h1>Welcome to Da Place</h1>
+        <p>Your one-stop destination for all things awesome!</p>
+    </section>
+    <nav>
+    <a href="#services">What We Offer</a>
+    <a href="#rooms">Rooms & Pricing</a>
+    <a href="#media">Gallery</a>
+    <a href="#location">Location</a>
+    <a href="#booking">Book Now</a>
+    </nav>
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Free Wi-Fi</li>
+            <li>24/7 Room Service</li>
+            <li>Spa & Wellness Center</li>
+            <li>Conference Rooms</li>
+        </ul>
+    </section>
+    <section id="rooms">
+        <h2>Rooms & Pricing</h2>
+        <table>
+            <tr>
+                <th>Room Type</th>
+                <th>Price per Night</th>
+            </tr>
+            <tr>
+                <td>Standard</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>Deluxe</td>
+                <td>15000</td>
+            </tr>
+            <tr>
+                <td>Suite</td>
+                <td>25000</td>
+            </tr>
+        </table>
+    </section>
+    <section id="media">
+        <h2>Gallery</h2>
+        <img src="Deluxe.jpg" alt="Deluxe Room" width="200">
+        <img src="Standard.jpg" alt="Room 2" width="200">
+        <img src="Lobby.jpg" alt="Lobby" width="200">
+    </section>
+    <section id="location">
+        <h2>Our Location</h2>
+        <p>Nairobi,Kenya</p>
+        <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.7690566980522!2d36.82194631597935!3d-1.2920657990560466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d87c2577b3%3A0x7b8c6b57e3c1df4f!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1695219938357!5m2!1sen!2ske"
+    width="600" height="400" allowfullscreen="" loading="lazy">
+  </iframe>
+    </section>
+    <section id="booking">
+        <h2>Book Your Stay</h2>
+        <form >
+            <label for ="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="enter your full name" required>
+            <label for ="email">Email Adress:</label>
+            <input type="email" id="email" name="email" placeholder="enter your email" required>
+            <label for ="checkin">Check-in Date</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <label for ="checkout">Check-out Date</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <label for ="room">Room Type:</label>
+            <select id="room" name="room" required>
+                <option value="">Select a room type</option>
+                <option value="standard">Standard</option>
+                <option value="deluxe">Deluxe</option>
+                <option value="suite">Suite</option>
+            </select>
+            <label for ="message">Special Requests:</label>
+            <textarea id="message" name="message" placeholder="Enter any special requests here"></textarea>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+<footer>
+    <p>&copy; 2024 Da Place. All rights reserved.</p>
+</footer>
+</body>
+</html>
